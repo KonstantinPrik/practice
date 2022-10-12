@@ -9,56 +9,83 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Константин Приходько</h1>
-    <hr />
-    <img
-      src="https://sun6.userapi.com/sun6-21/s/v1/if1/D5Xyz1bZM7HL533hU2BPaAkrRvve2CklJhRcSFCRx8vn9AoH3HpF7PFlKghpufvgd34QV4QT.jpg?size=656x1080&quality=96&type=album"
-      width="200"
-      alt="Мое фото"
-    />
-    <hr />
-    <h3>Мои хобби</h3>
-    <ul>
-      <li>Сноуборд</li>
-      <li>Кодинг</li>
-      <li>Аналитика</li>
-    </ul>
-    <hr />
-    <h3>Мои социальные сети</h3>
-    <ul>
-      <li><a href="https://vk.com/stikkkk">Вконтакте</a></li>
-      <li><a href="https://twitter.com/KonstantinPrik">Твиттеп</a></li>
-      <li>
-        <a href="https://www.instagram.com/konstantinprihodko/">Инстаграм</a>
-      </li>
-    </ul>
-    <hr />
-    <h3>Опыт работы</h3>
-    <table>
-      <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-      <tr>
-        <td>Не работал</td>
-        <td>Никто</td>
-        <td>2018-2022</td>
-      </tr>
-    </table>
-    <hr />
-    <h3>Связаться со мной</h3>
-    <form action="/">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите ваше имя" />
-      <br />
-      <label for="email">Ваш Email:</label>
-      <input type="email" id="email" placeholder="Введите ваш Email" />
-      <br />
-      <label for="message">Ваше сообщение:</label>
-      <br />
-      <textarea id="message" cols="30" rows="10"></textarea>
-      <input type="submit" value="Связаться" />
-    </form>
+    <div class="container">
+      <div class="info">
+        <img
+          src="https://sun6.userapi.com/sun6-21/s/v1/if1/D5Xyz1bZM7HL533hU2BPaAkrRvve2CklJhRcSFCRx8vn9AoH3HpF7PFlKghpufvgd34QV4QT.jpg?size=656x1080&quality=96&type=album"
+          alt="Мое фото"
+          class="avatar"
+        />
+
+        <div class="info-text">
+          <h1>Константин Приходько</h1>
+          <p>About me</p>
+          <h4>Мои социальные сети</h4>
+          <a
+            href="https://www.instagram.com/konstantinprihodko/"
+            target="_blank"
+            >Инстаграм</a
+          >
+          |
+          <a href="https://twitter.com/KonstantinPrik" target="_blank"
+            >Твиттер</a
+          >
+          |
+          <a href="https://vk.com/stikkkk" target="_blank">Вконтакте</a>
+        </div>
+      </div>
+
+      <div class="card bg-yellow">
+        <h3>Мои хобби</h3>
+        <ul class="list">
+          <li>Сноуборд</li>
+          <li>Кодинг</li>
+          <li>Аналитика</li>
+        </ul>
+      </div>
+
+      <div class="card bg-green">
+        <h3>Опыт работы</h3>
+        <table class="table">
+          <tr>
+            <td>Компания</td>
+            <td>Должность</td>
+            <td>Год</td>
+          </tr>
+          <tr>
+            <td>Не работал</td>
+            <td>Никто</td>
+            <td>2018-2022</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="card bg-red contacts">
+        <h3>Связаться со мной</h3>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите ваше имя" />
+            </div>
+            <div class="form-group">
+              <label for="email">Ваш Email:</label>
+              <input type="email" id="email" placeholder="Введите ваш Email" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Ваше сообщение:</label>
+            <textarea id="message" cols="30" rows="10"></textarea>
+          </div>
+          <input class="btn" type="submit" value="Связаться" />
+        </form>
+      </div>
+      <div class="box-model">
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+        <div class=""></div>
+      </div>
+    </div>
   </body>
 </html>
